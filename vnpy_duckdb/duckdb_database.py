@@ -131,8 +131,8 @@ class DuckdbDatabase(BaseDatabase):
             "symbol": symbol,
             "exchange": exchange.value,
             "interval": interval.value,
-            "start": str(start),
-            "end": str(end)
+            "start": start,
+            "end": end
         }
 
         self.execute(LOAD_BAR_QUERY, params)
